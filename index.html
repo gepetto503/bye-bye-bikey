@@ -10,38 +10,41 @@
   </head>
   <body>
     <div class="container">
-      <div class="well">
-        <h1>I have your bike</h1>
-        <h4>enter your bike to see if I've stollen it.</h4>
-        <form id="bike_form">
-          <div class="form-group">
-            <label for="make">Make</label>
-            <input type="text" id="make-form">
-          </div>
-          <div class="form-group">
-            <label for="location">Address or Zip Code</label>
-            <input type="text" id="location-form">
-          </div>
-          <div class="form-group">
-            <label for=""></label>
-            <select id="distance-form">
-              <option value="1">1 mile</option>
-              <option value="5">5 miles</option>
-              <option value="10">10 miles</option>
-              <option value="20">20 miles</option>
-              <option value="50">50 miles</option>
-            </select>
-          </div>
-          <button type="submit" name="button">Search</button>
-        </form>
-        <div class="i-stole-it">
-          <h4>here are bikes that I've stolen that match your description.</h4>
-        </div>
-        <ul class="showBikes">
-
-        </ul>
-
+      <div class="header">
+        <h1>Bye Bye, Bikey</h1>
       </div>
-    </div>
+      <div class="well">
+        <div class="centered-box">
+          <form id="bike_form">
+            <h1>I have your bike</h1>
+            <h4>enter your bike to see if I've stolen it.</h4>
+            <div class="form-group">
+              <label for="make">Make</label>
+              <input type="text" id="make-form" placeholder="try huffy, bridgestone, etc.">
+            </div>
+            <div class="form-group">
+              <label for="location">Address or Zip Code</label>
+              <input type="text" id="location-form" placeholder="enter a zipcode">
+            </div>
+            <div class="form-group">
+              <label for="">How far from your location?</label>
+              <select id="distance-form">
+                <option value="1">1 mile</option>
+                <option value="5">5 miles</option>
+                <option value="10">10 miles</option>
+                <option value="20">20 miles</option>
+                <option value="50">50 miles</option>
+              </select>
+            </div>
+            <button type="submit" name="button">Search</button>
+          </form>
+          <div class="i-stole-it">
+            <h4>here are bikes that I've stolen that match your description.</h4>
+          </div>
+          <ul class="showBikes">
+          </ul>
+        </div><!--centered box-->
+      </div><!--well-->
+    </div><!--container-->
   </body>
 </html>
