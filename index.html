@@ -11,7 +11,32 @@
   <body>
     <div class="container">
       <div class="well">
-        <h1>look its sass stuff</h1>
+        <h1>Let's find your bike</h1>
+        <form id="bike_form">
+          <div class="form-group">
+            <label for="make">Make</label>
+            <input type="text" id="make-form">
+          </div>
+          <div class="form-group">
+            <label for="location">Address or Zip Code</label>
+            <input type="text" id="location-form">
+          </div>
+          <div class="form-group">
+            <label for=""></label>
+            <select id="distance-form">
+              <option value="1">1 mile</option>
+              <option value="5">5 miles</option>
+              <option value="10">10 miles</option>
+              <option value="20">20 miles</option>
+              <option value="50">50 miles</option>
+            </select>
+          </div>
+          <button type="submit" name="button">Search</button>
+        </form>
+        <div class="showBikes">
+
+        </div>
+
       </div>
     </div>
   </body>
