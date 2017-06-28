@@ -1,7 +1,10 @@
 var BikeSearch = require('./../js/bike_search.js').bikeSearchModule;
 
-var displayBikes = function(bikeTitle) {
-  $('.showBikes').text("Bike Title: " + bikeTitle);
+var displayBikes = function(x) { // x = bikes array from response
+  console.log(x);
+  for (var i = 0; i < x.length; i++) {
+    $('.showBikes').append('<li>' + x[i].title + '</li>');
+  }
 }
 
 $(function () {
