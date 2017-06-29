@@ -1,6 +1,7 @@
 var BikeSearch = require('./../js/bike_search.js').bikeSearchModule;
 
 var displayBikes = function(x) { // x = bikes array from response
+  $('.i-stole-it').empty();
   console.log(x);
   for (var i = 0; i < x.length; i++) {
     $('.i-stole-it').append(
