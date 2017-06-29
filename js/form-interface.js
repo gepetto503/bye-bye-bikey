@@ -3,7 +3,20 @@ var BikeSearch = require('./../js/bike_search.js').bikeSearchModule;
 var displayBikes = function(x) { // x = bikes array from response
   console.log(x);
   for (var i = 0; i < x.length; i++) {
-    $('.showBikes').append('<li>' + x[i].title + '</li>');
+    $('.i-stole-it').append(
+    '<div class="stolen-bike">' +
+      '<h2>' + x[i].title + '</h2>' +
+      '<ul class="properties">' +
+        '<li> Serial: ' + x[i].serial + '</li>' +
+        '<li> Frame Model: ' + x[i].frame_model + '</li>' +
+        '<li> Model Year: ' + x[i].year + '</li>' +
+        '<li> Color(s): ' + x[i].frame_colors + '</li>' +
+        '<li> Stolen Location: ' + x[i].stolen_location + '</li>' +
+      '</ul>' +
+    '</div>');
+
+
+    // $('.title').text(x[i].title);
   }
 }
 
