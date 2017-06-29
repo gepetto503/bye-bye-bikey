@@ -42,11 +42,48 @@
           <div id="map"></div>
           <div class="i-stole-it">
             <h4>here are bikes that I've stolen that match your description.</h4>
+            <p>
+              (they're all at Brendan's house, which is where I'm hanging out!)
+            </p>
 
           </div>
         </div><!--centered box-->
       </div><!--well-->
     </div><!--container-->
+    <script>
+
+      function initMap(){
+        //options to be passed into map, must be defined before map is initialized
+        var options = {
+          center: {lat:45.5231,lng:-122.6765},
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        //new map, passing in the div to display it in and the options(below)
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        //Add Marker function
+        function addMarker(coords){
+          var marker = new google.maps.Marker({
+            position:coords,
+            map:map,
+            icon:'images/marker.png'
+          });
+          var infoWindow = new google.maps.InfoWindow({
+            content:"<h4>Come Get em!</h4>"
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          })
+        }
+        //call addMarker, pass in hardcoded coordinates
+        addMarker({lat:45.5096536,lng:-122.6489388});
+        addMarker({lat:39.9390715,lng:116.1165972});
+
+
+
+      }
+    </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFneo_lwqEOcIeGqVeEoCNsXrundcYn9g&callback=initMap">
     </script>
