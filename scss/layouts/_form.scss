@@ -1,25 +1,32 @@
-#bike_form {
 
+//child of centered-box
+#bike_form { //flex parent
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  //flex child
   h1, h4 {
+    border: inherit;
     align-self: center;
   }
 
-
+  //flex child
   button {
+    border: inherit;
     margin: 20px auto;
 
   }
+  //flex child
   .form-group {
+    border: inherit;
     margin: 10px;
-
+    //not a flex child
     label {
-      width: 48%;
+      width: 48%;//of form group
     }
+    //not a flex child
     input {
-      width: 48%;
+      width: 48%;//of form group
     }
   }
 }

@@ -11,9 +11,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <h1>Bye Bye, Bikey</h1>
+      <div class="fullscreen-bg">
+        <div class="header-text">
+          <h2>Bye Bye, Bikey</h2>
+          <p>
+            An index of bikes Justin Timberlake has stolen
+          </p>
+        </div>
+        <video loop muted autoplay poster="images/justin.jpg" class="fullscreen-bg__video">
+            <source src="videos/justin.mp4" type="video/mp4">
+        </video>
+
       </div>
+      <!-- <div class="header">
+        <h1>Bye Bye, Bikey</h1>
+      </div> -->
       <div class="well">
         <div class="centered-box">
           <form id="bike_form">
@@ -39,7 +51,7 @@
             </div>
             <button type="submit" name="button">Search</button>
           </form>
-          <div id="map"></div>
+          <!-- <div id="map"></div> -->
           <div class="i-stole-it">
             <h4>here are bikes that I've stolen that match your description.</h4>
             <p>
